@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			#box{
+				
+				padding-top: 360px;
+				width: 360px;
+				border: 1px solid gray;
+				margin: 100px auto;
+				background-image: url(img/01big.jpg);
+				background-repeat: no-repeat;
+			}
+			#box ul{
+				height: 70px;
+				border-top: 1px solid gray;
+			}
+			#box ul li{
+				float: left;
+			}
+			#box ul li img{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li><img src="img/01.jpg"></li>
+				<li><img src="img/02.jpg"></li>
+				<li><img src="img/03.jpg"></li>
+				<li><img src="img/04.jpg"></li>
+				<li><img src="img/05.jpg"></li>
+			</ul>
+		</div>
+		
+		
+	</body>
+	<script>
+		
+		var lis=document.getElementsByTagName("li");
+		var box=document.getElementById("box");
+		lis[0].onmouseover=function(){
+			box.style.backgroundImage="url(img/01big.jpg)";
+		}
+		lis[1].onmouseover=function(){
+			box.style.backgroundImage="url(img/02big.jpg)";
+		}
+		lis[2].onmouseover=function(){
+			box.style.backgroundImage="url(img/03big.jpg)";
+		}
+		lis[3].onmouseover=function(){
+			box.style.backgroundImage="url(img/04big.jpg)";
+		}
+		lis[4].onmouseover=function(){
+			box.style.backgroundImage="url(img/05big.jpg)";
+		}
+		
+	</script>
+</html>
